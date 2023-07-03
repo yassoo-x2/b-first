@@ -1,0 +1,88 @@
+:root {
+  --fir_bg  : #0A4D68;
+  --fir_shad: #00FFCA;
+  --sec_bg  : #088395;
+  --sec-shad: #05BFDB;
+  --fir-col : #fff;
+  --sec-col : #000;
+}
+
+* {
+  padding   : 0px;
+  margin    : 0px;
+  box-sizing: border-box;
+}
+
+/*All body*/
+body {
+  background : border-box;
+  width      : 100%;
+  margin     : 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+  font       : bold;
+  font-size  : 16px;
+  text-align : center;
+  color      : var(--sec-col);
+  font-family: Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+}
+
+
+
+.input-box {
+  position     : relative;
+  margin-bottom: 0.8em;
+}
+
+.input-box .form-control {
+  display: inline;
+
+}
+
+.input-box input,
+select {
+  width        : 100%;
+  padding      : 10px;
+  border       : 1px solid rgba(201, 199, 199, 0.5);
+  border-radius: 5px;
+  outline      : none;
+  font-size    : 1em;
+  box-shadow   : 0 1px 3px 0 var(--bor-shad) !important;
+
+}
+
+.form-select:focus {
+  outline      : none !important;
+  box-shadow   : 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  border       : 1px solid var(--sec_bg);
+  border-radius: 5px;
+
+}
+
+.input-box input:placeholder-shown~span,
+.input-box span {
+  position      : absolute;
+  left          : 20px;
+  padding       : 10px;
+  pointer-events: none;
+  color         : rgba(58, 54, 54, 0.5);
+  transition    : 0.5s;
+  font-size     : 0.8em;
+}
+
+.input-box input:valid,
+select:focus,
+select {
+  background-color: none;
+}
+
+.input-box input:not(:placeholder-shown)~span,
+.input-box input:focus~span,
+.input-box input[type="date"]~span {
+  color           : #212529;
+  padding         : 0 10px;
+  transform       : translateX(-12px) translateY(-9px);
+  background-color: var(--sec_bg);
+  border-left     : 1px solid rgba(201, 199, 199, 0.5);
+  border-right    : 1px solid rgba(201, 199, 199, 0.5);
+
+}

@@ -1,0 +1,196 @@
+
+
+/*container form*/
+.container {
+    margin-top   : 1em;
+    width        : 70%;
+    padding-left : 0px;
+    padding-right: 0px
+}
+ .btn:focus{
+    box-shadow: none;
+ }
+
+/*--------------index---------------------*/
+
+/*--------------home.php---------------------*/
+.con-home .note{
+    box-shadow: -2px 0px 5px 0 var(--fir-shad);
+    border: none;
+}
+.country-feild,.product{
+    margin-bottom: 2%;
+}
+.product button,.country_btn{
+width: 100%;
+border: none;
+}
+
+.buy-btn {
+    width: 100%;
+    border-radius: 0 0.25rem 0.25rem 0;
+    box-shadow: 1px 0px 5px 0px var(--fir_shad);
+    background-color: var(--fir_shad) !important;
+    color: var(--sec-col);
+    border-color: var(--fir_shad) !important;
+      }
+.countrylist form:nth-child(even) .country-feild,.prodlist .product:nth-child(odd) button {
+        background-color: var(--fir_bg);
+      }
+      
+.countrylist form:nth-child(odd) .country-feild,.prodlist .product:nth-child(even) button {
+        background-color: var(--sec_bg);
+      }
+
+  /*---icon price*/
+  .pric_icon{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    transform: rotate(335deg) ;
+    position: relative;
+  }
+  .pric_icon::before{
+    content: attr(data-text);
+    position: absolute;
+    background-color: red;
+    top: -8px;
+    width: 19px;
+    height: 15px;
+    right: 3px;
+    transform: rotate(38deg);
+    border-radius: 3px 0 0 0;
+  }
+  .pric_icon span{
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  #countrylist .hidden {
+    display: none;
+  }
+  #countrylist span {
+    display: inline-block;
+  }
+
+  .maxcost{
+    padding: 0;
+    line-height: 0;
+    position: relative;
+    z-index: 3;
+  }
+
+  .maxcost p{
+    margin: 0;
+  }
+/*-------------------------navbar------------------------------*/
+
+
+.bg-dark {
+    background-color: var(--fir_bg) !important;
+    color:var(--fir-col);
+}
+
+
+
+  /*------------------show hide-------------------------*/
+
+  
+
+
+
+  
+  /*-----------------loading--------------------------*/
+  #loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  #loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #loading-message {
+    margin-top: 10px;
+    color: #f3f3f3;
+    font-weight: bold;
+  }
+
+/*-------------active.php------------------*/
+.fa-xmark{
+  color: red;
+}
+
+.fa-hourglass-half{
+  color:rgb(226, 226, 25);
+}
+
+/*------------------index-------------*/
+.ind-header{
+  background-image: url('../../admin/images/site/head-index.svg');
+  background-repeat: no-repeat;
+}
+.ind-header .col-sm{
+  margin-top: auto;
+    margin-bottom: auto;
+}
+.col-sm img{
+  width: 100% ;
+}
+.index-body{
+  text-align: start;
+}
+
+.servic .card{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  width: 50%;
+  padding: 2%;
+}
+
+.servic img{
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  margin-top: -3.25rem;
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 3%;
+  background: linear-gradient(40deg,#2096ff,#05ffa3) !important
+}
+.servic .col{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width:100px) and (max-width:767px)  {
+  .servic .card{
+    width: 100%;
+  }
+  /*------------------recharge-------------*/
+
+       }  
+.recharge .address,.recharge i{
+  display: inline-block;
+  border: 1px solid rgba(201, 199, 199, 0.5);
+  border-radius: 5px;
+}
